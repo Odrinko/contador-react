@@ -1,0 +1,68 @@
+// Contenedor principal del contador
+.contador {
+  // Centramos el contenido del contador en la página
+  font-family: "Oswald";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+
+  /* Añade el SVG como fondo */
+  background-image: url("../assets/fondo-paper-cut.svg");
+  background-size: cover; /* Asegura que cubra toda el área */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+}
+
+.contador_contenido {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7px );
+  -webkit-backdrop-filter: blur( 7px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 50px;
+}
+
+
+// Título principal
+.contadors_titulo {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); // Sombra para mejor legibilidad
+}
+
+// Estilo del valor del contador
+.contador_valor {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 1rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+// Botones de incremento y decremento
+.contador_boton {
+  background-color: rgba(0, 122, 204, 0.8); // Fondo ligeramente transparente
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); // Sombra para efecto de profundidad
+
+  &:hover {
+    background-color: rgba(0, 95, 153, 0.8);
+  }
+
+  &:active {
+    background-color: rgba(0, 63, 102, 0.8);
+  }
+}
+
